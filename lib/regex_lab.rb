@@ -1,6 +1,6 @@
 require 'pry' 
 
-def starts_with_a_vowel?(word)
+def starts_with_a_vowel?(match)
   word.start_with?(/[aeiou]/)
   binding.pry 
 end
