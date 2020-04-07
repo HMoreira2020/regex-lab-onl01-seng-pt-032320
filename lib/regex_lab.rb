@@ -1,7 +1,10 @@
 require 'pry' 
 
 def starts_with_a_vowel?(word)
-  word.scan(/[aeiouAEIOU]/) 
+  if !(word.scan(/[aeiouAEIOU]/)).empty? 
+    true 
+  else 
+    false 
   binding.pry 
 end	
 
