@@ -1,7 +1,7 @@
 require 'pry' 
 
 def starts_with_a_vowel?(match)
-  match.start_with?(/[aeiou]/)
+  match.each{|w| w.start_with?(/[aeiou]/)}
   binding.pry 
 end
 
